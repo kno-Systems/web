@@ -13,8 +13,8 @@ nav li {
 
 nav a {
   display: block;
-  width: 5px;
-  height: 5px;
+  width: 40px;
+  height: 40px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -23,11 +23,14 @@ nav a {
 
 .home-btn {
   background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/House-Home-Property-1024.png');
+  background-size: 13px;
 }
 
 .profile-btn {
   background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/User-Account-1024.png');
+  background-size: 13px;
 }
+
 
 nav a:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
