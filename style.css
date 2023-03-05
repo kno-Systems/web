@@ -13,8 +13,8 @@ nav li {
 
 nav a {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 5px;
+  height: 5px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
