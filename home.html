@@ -1,98 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Webpage</title>
+	<title>My Website</title>
 	<style>
 		body {
-			background-color: white;
+			background-color: #ffffff;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
 		}
+
 		.container {
 			max-width: 800px;
 			margin: 0 auto;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			padding-top: 50px;
-		}
-		.button {
-			margin: 10px;
-			height: 50px;
-			width: 50px;
-			border-radius: 50%;
-			border: none;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
-			transition: all 0.3s ease;
-		}
-		.button:hover {
-			transform: translateY(-3px);
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
-		}
-		.list-frame {
-			border: 2px solid #333;
-			border-radius: 10px;
 			padding: 20px;
-			margin: 50px 0;
-			background-color: #f7f7f7;
 		}
-		.list-item {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
+
+		.card {
+			background-color: #ffffff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			padding: 20px;
 			margin-bottom: 20px;
 		}
-		.title {
-			font-size: 24px;
-			font-weight: bold;
-			margin-bottom: 10px;
-		}
-		.image {
-			max-width: 200px;
-			max-height: 200px;
-			margin-right: 20px;
+
+		.card img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
 			border-radius: 10px;
-			object-fit: cover;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
 		}
-		.rating {
+
+		.card .rating {
+			background: linear-gradient(to right, #ff7f50, #ff2f7c);
+			color: #ffffff;
+			padding: 10px;
+			border-radius: 0 0 10px 10px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.card .rating span {
+			margin-left: 5px;
 			font-size: 16px;
-			color: #ff9800;
-			margin-bottom: 10px;
+			font-weight: normal;
+		}
+
+		.button {
+			background-color: #ffffff;
+			color: #000000;
+			border: none;
+			border-radius: 0;
+			padding: 15px;
+			cursor: pointer;
+			transition: 0.3s;
+			box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+			display: inline-block;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+
+		.button:hover {
+			background-color: #d8d8d8;
+			box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+			transform: translateY(3px);
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<button class="button" style="background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/House-Home-Property-1024.png')"></button>
-		<button class="button" style="background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/User-Account-1024.png')"></button>
-	</div>
-	<div class="list-frame">
-		<div class="list-item">
-			<img class="image" src="https://dummyimage.com/200x200/ccc/fff.png&text=Image+1" alt="Image 1">
-			<div>
-				<h2 class="title">Item 1</h2>
-				<p class="rating">4.5 stars</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
+		<div class="button-container">
+			<button class="button"><img src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/House-Home-Property-1024.png"></button>
+			<button class="button"><img src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/User-Account-1024.png"></button>
 		</div>
-    <div class="list-container">
-      <div class="list-item">
-        <div class="item-info">
-          <h2>Title 4</h2>
-          <img src="https://cdn.example.com/image4.jpg" alt="Image 4">
-          <p>Rating: 4.2</p>
-        </div>
-      </div>
-      <div class="list-item">
-        <div class="item-info">
-          <h2>Title 5</h2>
-          <img src="https://cdn.example.com/image5.jpg" alt="Image 5">
-          <p>Rating: 3.8</p>
-        </div>
-      </div>
-    </div>
-  </body>
+		
+		<div class="card">
+			<img src="https://picsum.photos/400/300">
+			<div class="rating">4.5<span>(215 Reviews)</span></div>
+			<h2>Title of Item</h2>
+			<p>Description of Item</p>
+		</div>
+
+		<div class="card">
+			<img src="https://picsum.photos/400/300">
+			<div class="rating">4.8<span>(315 Reviews)</span></div>
+			<h2>Title of Item</h2>
+			<p>Description of Item</p>
+		</div
+		<div class="card">
+			<img src="https://picsum.photos/400/300">
+			<div class="rating">4.5<span>(215 Reviews)</span></div>
+			<h2>Title of Item</h2>
+			<p>Description of Item</p>
+		</div>
+
+		<div class="card">
+			<img src="https://picsum.photos/400/300">
+			<div class="rating">4.8<span>(315 Reviews)</span></div>
+			<h2>Title of Item</h2>
+			<p>Description of Item</p>
+		</div>
+
+		<div class="card">
+			<img src="https://picsum.photos/400/300">
+			<div class="rating">4.2<span>(124 Reviews)</span></div>
+			<h2>Title of Item</h2>
+			<p>Description of Item</p>
+		</div>
+
+		<div class="card">
+			<img src="https://picsum.photos/400/300">
+			<div class="rating">3.9<span>(76 Reviews)</span></div>
+			<h2>Title of Item</h2>
+			<p>Description of Item</p>
+		</div>
+
+		<div class="card">
+			<img src="https://picsum.photos/400/300">
+			<div class="rating">4.6<span>(422 Reviews)</span></div>
+			<h2>Title of Item</h2>
+			<p>Description of Item</p>
+		</div>
+		
+	</div>
+</body>
 </html>
