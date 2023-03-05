@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Webpage</title>
+	<style>
+		body {
+			background-color: white;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding-top: 50px;
+		}
+		.button {
+			margin: 10px;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: none;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+		}
+		.button:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+		}
+		.list-frame {
+			border: 2px solid #333;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 50px 0;
+			background-color: #f7f7f7;
+		}
+		.list-item {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.image {
+			max-width: 200px;
+			max-height: 200px;
+			margin-right: 20px;
+			border-radius: 10px;
+			object-fit: cover;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		.rating {
+			font-size: 16px;
+			color: #ff9800;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button class="button" style="background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/House-Home-Property-1024.png')"></button>
+		<button class="button" style="background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/User-Account-1024.png')"></button>
+	</div>
+	<div class="list-frame">
+		<div class="list-item">
+			<img class="image" src="https://dummyimage.com/200x200/ccc/fff.png&text=Image+1" alt="Image 1">
+			<div>
+				<h2 class="title">Item 1</h2>
+				<p class="rating">4.5 stars</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+    <div class="list-container">
+      <div class="list-item">
+        <div class="item-info">
+          <h2>Title 4</h2>
+          <img src="https://cdn.example.com/image4.jpg" alt="Image 4">
+          <p>Rating: 4.2</p>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="item-info">
+          <h2>Title 5</h2>
+          <img src="https://cdn.example.com/image5.jpg" alt="Image 5">
+          <p>Rating: 3.8</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
